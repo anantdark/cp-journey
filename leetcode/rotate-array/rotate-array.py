@@ -6,9 +6,9 @@ class Solution:
         for i in range(k):
             temp = nums.pop(-1)
             nums.insert(0, temp)
-
-        ##
+###
         print(nums)
+
 Solution().rotate([1, 2, 3, 4, 5, 6, 7], 3)
         
 # https://leetcode.com/problems/rotate-array/
