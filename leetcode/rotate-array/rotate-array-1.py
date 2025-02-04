@@ -3,11 +3,13 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
-        buffer = nums[len(nums)-k:]
+        arr_size = len(nums)
+        k = k % arr_size
+        buffer = nums[arr_size-k:]
         # using nums[:] to slice the list in place and not make a copy
-        nums[:] = buffer + nums[:-k]
+        nums[:] = buffer + nums[:arr_size-k]
 ## 
         print(nums)
-Solution().rotate([1, 2, 3, 4, 5, 6, 7], 3)
+Solution().rotate([1, 2], 5)
         
 # https://leetcode.com/problems/rotate-array/
