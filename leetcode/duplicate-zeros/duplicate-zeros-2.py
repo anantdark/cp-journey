@@ -3,7 +3,7 @@ from typing import List
 # -- Constraints
 # - Don't use extra space, trim off extra elements after insertion
 
-# Initial Solution (using insert) {Incorrect}
+# Optimized Solution 
 # Time O(n) | Space O(1)
 # We need to loop two times, once from the front to count the number of zeroes and till the index after which array will go outside original length. Then loop back from that index overriding the elements from -1 index and adding extra zeroes.
 

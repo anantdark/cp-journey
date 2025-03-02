@@ -3,9 +3,9 @@ from typing import List
 # -- Constraints
 # - Don't use extra space, trim off extra elements after insertion
 
-# Initial Solution (using insert) {Incorrect}
-# Time O(n) | Space O(N)
-# We keep inserting the elements from the back and then trim at the end, this will still take up N extra space in worst case during while loop.
+# Brute Solution (using insert)
+# Time O(n^2) | Space O(N) (insert operation takes 0(n) since existing elements need to be shifted rightwards)
+# We keep inserting the elements from the back and then trim at the end.
 
 class Solution:
     def duplicateZeros(self, arr: List[int]) -> None:
