@@ -2,7 +2,7 @@ from typing import List
 
 # _ solution
 # Time O() | Space O()
-# In this problem,
+# 
 
 class Solution:
     def method_template(self, nums: List[int]):
