@@ -1,4 +1,4 @@
-from typing import List
+from typing import List, Optional
 
 # _ solution
 # Time O() | Space O()
