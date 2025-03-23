@@ -1,0 +1,34 @@
+from typing import List, Optional
+
+# Optimized solution (Recursive)
+# Time O(n) | Space O(n) (recursive stack)
+# 
+
+# Definition for a binary tree node.
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+class Solution:
+    def postorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
+        def traverse(node, arr=[]):
+            if not node:
+                return
+            
+            traverse(node.left)
+            traverse(node.right)
+            arr.append(node.val)
+            return arr
+        if root:
+            return traverse(root)
+        else:
+            return []
+
+## 
+        print(nums)
+arr = TreeNode(3)
+k = Solution().postorderTraversal(arr)
+print(k)
+        
+# https://leetcode.com/problems/binary-tree-postorder-traversal/
