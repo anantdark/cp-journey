@@ -23,7 +23,7 @@ class Solution:
         print(nums)
 
 
-arr = [5, 4, -1, 7, 8]
+arr = [-2, -1, -3, 4, -1, -2, 1, -5, 4]
 k = Solution().maxSubArray(arr)
 print(k)
 
