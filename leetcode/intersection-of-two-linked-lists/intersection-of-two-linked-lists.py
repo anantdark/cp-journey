@@ -67,7 +67,7 @@ class Solution:
 
 arr = [2, 7, 11, 15]
 val = 9
-k = Solution().template(arr, val)
+k = Solution().getI(arr, val)
 print(k)
 
 # https://leetcode.com/problems/intersection-of-two-linked-lists/
